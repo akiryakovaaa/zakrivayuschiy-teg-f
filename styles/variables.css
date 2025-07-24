@@ -1,5 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
+    --content-width: clamp(375px, 100%, 700px);
+    
     --accent-text: PressStart2P;
     --accent-text-weight: 400;
     --basic-text: Inter Variable;

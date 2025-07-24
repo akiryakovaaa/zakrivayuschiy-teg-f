@@ -18,6 +18,8 @@
   background-size: cover;
   font-family: var(--basic-text), sans-serif;
   font-variation-settings: 'wght' var(--basic-main-text);
+  width: var(--content-width);
+  margin: 0 auto;
 }
 
 .header {
@@ -42,11 +44,11 @@
 }
 
 .header-big-title {
-  font-size: 49px;
+  font-size: clamp(32px, 5vw, 49px);
 }
 
 .header-small-title {
-  font-size: 14px;
+  font-size: clamp(12px, 2vw, 14px);
 }
 
 .main {
