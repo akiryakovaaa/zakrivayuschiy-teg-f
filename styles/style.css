@@ -13,7 +13,11 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  background-image: linear-gradient(#E7E7E7, #1A1A1A);
+  background-image: var(--bg-gradient);
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: var(--basic-text), sans-serif;
+  font-variation-settings: 'wght' var(--basic-main-text);
 }
 
 .header {
@@ -33,7 +37,7 @@
 }
 
 .header-title {
-  font-family: var( --accent-text);
+  font-family: var( --accent-text), sans-serif;
   font-weight: var(--accent-text-weight);
 }
 
