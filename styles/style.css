@@ -51,11 +51,13 @@
 
 .main {
   margin-bottom: 100px;
-  background-color: #FFFFFF;
+  display: grid;
+  gap: 54px;
 }
 
 .card {
   border: 2px solid #000000;
+  background-color: #FFFFFF;
 }
 
 .card-text {
