@@ -109,3 +109,29 @@
   height: 36px;
   pointer-events: none;
 }
+
+.card-image-wrapper {
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  font-family: var(--accent-text);
+  font-weight: var(--accent-text-weight);
+  font-size: 14px;
+  color: #000;
+  display: flex;
+  justify-items: end;
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+  -webkit-text-stroke: 1px var(--stroke-color);
+  text-shadow: 1px 1px 0 var(--stroke-color); 
+  top: 25px;
+  right: 25px;
+}
+
+@supports ((text-stroke: 1px var(--stroke-color)) or (-webkit-text-stroke: 1px var(--stroke-color))) {
+  .label {
+    text-shadow: none;
+  }
+} 
