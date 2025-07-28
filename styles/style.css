@@ -34,6 +34,9 @@
 
 .header-text {
   text-align: center;
+  text-transform: uppercase;
+  display: grid;
+  gap: 20px;
 }
 
 .header-title {
@@ -42,16 +45,19 @@
 }
 
 .header-big-title {
-  font-size: clamp(32px, 5vw, 49px);
+  font-size: clamp(49px, 3.04vw + 37.6px, 65px);
 }
 
 .header-small-title {
-  font-size: clamp(12px, 2vw, 14px);
+  font-size: clamp(14px, 0.97vw + 10.36px, 23px);
 }
 
 .main {
-  margin-bottom: 100px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: space-between;
   gap: 54px;
 }
 
@@ -86,6 +92,7 @@
 .button__text {
   font-family: var(--accent-text), sans-serif;
   font-weight: var(--accent-text-weight);
+  font-size: 14px;
 }
 
 .card__like-button {
@@ -137,3 +144,30 @@
     text-shadow: none;
   }
 } 
+
+.button-save {
+  background-color: #fff;
+  width: 306px;
+  height: 84px;
+  border: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  padding: 12px 0;
+}
+
+.save-icon {
+  width: 28px;
+  height: 28px;
+  image-rendering: pixelated;
+}
+
+.dialog {
+  background-color: #FFFFFF;
+  width: 341px;
+  height: 191px;
+  border: 2px solid #000;
+}
