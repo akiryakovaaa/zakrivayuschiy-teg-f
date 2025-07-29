@@ -58,7 +58,7 @@
   align-items: center;
   min-height: 100vh;
   justify-content: space-between;
-  gap: 54px;
+  gap: 52px;
 }
 
 .card {
@@ -66,9 +66,14 @@
   background-color: #FFFFFF;
 }
 
+.card-title {
+  margin: 4px 10px;
+}
+
 .card-text {
   font-family: var(--basic-text), sans-serif;
   font-size: 18px;
+  line-height: 21px;
 }
 
 .card-info {
@@ -105,7 +110,6 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  padding: 0;
   overflow: visible; 
   margin-right: 25px;
   margin-bottom: 25px;
@@ -113,7 +117,7 @@
 
 .like-icon {
   position: absolute;
-  left: -45px; 
+  left: -47px; 
   width: 39px;
   height: 36px;
   pointer-events: none;
@@ -166,8 +170,42 @@
 }
 
 .dialog {
+  display: none;
+}
+
+.dialog[open] {
   background-color: #FFFFFF;
   width: 341px;
   height: 191px;
   border: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.75);
+} 
+
+.dialog-content {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.dialog-text {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.dialog-button {
+  width: 261px;
+  height: 38px;
+  border: 2px solid #000;
+  font-family: var(--accent-text), sans-serif;
+  font-weight: var(--accent-text-weight);
+  text-transform: uppercase;
 }
