@@ -217,3 +217,30 @@ dialog::backdrop {
   max-width: 28px;
   height: auto;
 }
+
+@media (width >= 500px)  {
+  .header {
+    height: 368px;
+  }
+
+  .button-save {
+    flex-direction: row;
+    width: 335px;
+    height: 55px;
+    padding: 15px 20px;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .button__text {
+    text-align: left;
+    font-size: 14px;
+    line-height: 90%;
+    white-space: nowrap;
+  }
+
+  .button-icon {
+    max-width: 21px;
+    height: auto;
+  }
+}
