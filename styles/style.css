@@ -89,6 +89,34 @@
   object-fit: cover;
 }
 
+.image-just-do-it {
+  filter: blur(2px);
+}
+
+.image-programmer {
+  filter: opacity(0.6);
+}
+
+.image-ginger-cat {
+  filter: saturate(2);
+}
+
+.image-kitty {
+  filter: hue-rotate(90deg);
+}
+
+.image-sleeping-cats {
+  filter: sepia(1);
+}
+
+.image-wooden-blocks {
+  filter: grayscale(1);
+}
+
+.image-cool {
+  filter: grayscale(0.8) blur(1px) brightness(1.2)
+}
+
 .button {
   display: grid;
   justify-content: end;
@@ -141,6 +169,7 @@
   text-shadow: 1px 1px 0 var(--stroke-color); 
   top: 25px;
   right: 25px;
+  z-index: 2;
 }
 
 @supports ((text-stroke: 1px var(--stroke-color)) or (-webkit-text-stroke: 1px var(--stroke-color))) {
