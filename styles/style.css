@@ -268,8 +268,20 @@ dialog::backdrop {
     white-space: nowrap;
   }
 
+  .dialog-text {
+    white-space: normal;
+    line-height: 150%;
+  }
+
   .button-icon {
     max-width: 21px;
     height: auto;
+  }
+
+  .dialog-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 }
